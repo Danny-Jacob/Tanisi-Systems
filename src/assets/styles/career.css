@@ -1,0 +1,102 @@
+.job_box{
+    background: #2F61C3;
+    padding: 2rem;
+    color: white;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.job_head{
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+
+}
+.job_title{
+    font-size: x-large;
+}
+.job_body{
+    display: flex;
+    gap: 5rem;
+    /* justify-content: space-between; */
+}
+.job_lable{
+    font-weight: 300;
+}
+.apply{
+padding: 5rem 0;
+}
+.apply input[type="text"] {
+    /* margin: 2rem; */
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #ccccccb5; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    background: transparent;
+    color: white;
+    
+}
+.apply input[type="number"] {
+    /* margin: 2rem; */
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #ccccccb5; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    background: transparent;
+    color: white;
+    
+}
+.apply input[type="file"] {
+    /* margin: 2rem; */
+    width: 100%; /* Full width */
+    padding: 10px 10px 10px 0; /* Padding inside the input */
+    
+    font-size: 16px; /* Font size */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    background: transparent;
+    color: white;
+    
+}
+
+/* Style the input field on focus */
+.apply input[type="text"]:focus {
+    border-color: #66afe9; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); /* Add a subtle shadow on focus */
+}
+.apply-head{
+    font-size: 50px;
+}
+.apply-body{
+    font-size: 18px;
+}
+
+.custom-choose{
+     width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the input */
+    
+    font-size: 16px; /* Font size */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    background: transparent;
+    color: white;
+}
+.apply-main{
+    margin: 0 auto;
+    max-width: 900px;
+}
+.apply label{
+    width: 100%;
+}
+.apply-textarea{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #ccccccb5; 
+    border-radius: 10px;
+    color: white;
+    min-height: 20px;
+    padding: 10px;
+    font-size: 16px;
+}

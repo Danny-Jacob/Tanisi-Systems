@@ -1,0 +1,60 @@
+.navbar {
+  width: -webkit-fill-available;
+  display: flex;
+  flex-direction: row; /* Added */
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  margin: 1rem 4rem;
+  align-items: center;
+  background: transparent;
+}
+.explore-button {
+  background: #c32f49;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+}
+.fullscreen-overlay {
+    /* padding: 2rem 6rem; */
+  z-index: 999;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Adjust the alpha value for transparency */
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+  border-radius: 10px;
+}
+.over-flex{
+    width: -webkit-fill-available;
+  display: flex;
+  flex-direction: row; /* Added */
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  margin: 1rem 4rem;
+  align-items: center;
+}
+.nav-items{
+    display: grid;
+    justify-items: end;
+    padding-top: 5rem;
+    padding-right: 6rem;
+    gap: 1rem;
+}
+.nav-item-cs{
+    /* font-weight: bold; */
+    font-size: 35px;
+    cursor: pointer;
+}
+.nav-item-cs:hover{
+    /* font-weight: bold; */
+    font-size: 35px;
+    color: #c32f49;
+}

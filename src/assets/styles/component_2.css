@@ -1,0 +1,17 @@
+.comp_2_heading{
+    color: #2F61C3;
+    font-weight: bold;
+    font-size: medium;
+}
+.comp_2_desc{
+text-align: justify;
+font-size: xx-large;
+}
+.comp_2{
+padding: 8rem 2rem;
+max-width: 1200px;
+margin: 0 auto;
+}
+.image_3{
+    width: -webkit-fill-available;
+}

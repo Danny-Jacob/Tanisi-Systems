@@ -7,6 +7,7 @@
   margin: 1rem 4rem;
   align-items: center;
   background: transparent;
+  z-index: 99999;
 }
 .explore-button {
   background: #c32f49;
@@ -19,7 +20,7 @@
 }
 .fullscreen-overlay {
     /* padding: 2rem 6rem; */
-  z-index: 999;
+  z-index: 999999999999;
   position: fixed;
   height: 100vh;
   width: 100%;
@@ -57,4 +58,62 @@
     /* font-weight: bold; */
     font-size: 35px;
     color: #c32f49;
+}
+@media screen and (max-width:800px) {
+  .navbar {
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: row; /* Added */
+    justify-content: space-between;
+    /* padding: 1rem ; */
+    margin: 0;
+    align-items: center;
+    background: white;
+    position: fixed;
+  }
+  .nav-logo{
+    width: 150px;
+  }
+  .explore-button {
+    background: #c32f49;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    font-size: 10px;
+  }
+  .nav-right-buttons{
+    display: flex;
+  }
+  .ham{
+    width:25px;
+  }
+  .over-flex{
+    width: -webkit-fill-available;
+  display: flex;
+  flex-direction: row; /* Added */
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  margin: 0;
+  align-items: center;
+}
+.nav-items{
+    display: grid;
+    justify-items: end;
+    padding-top: 5rem;
+    padding-right: 2rem;
+    gap: 1rem;
+}
+.nav-item-cs{
+    /* font-weight: bold; */
+    font-size: 24px;
+    cursor: pointer;
+}
+.nav-item-cs:hover{
+    /* font-weight: bold; */
+    font-size: 24px;
+    color: #c32f49;
+}
 }

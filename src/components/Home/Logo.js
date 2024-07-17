@@ -28,7 +28,7 @@ const Logo = () => {
 
   return (<>
     <div className="com-logo">
-      <span style={{display: "flex",justifyContent:"center",color:"#2F61C3",fontSize:"35px"}}>Our Clients</span>
+      <span className="head-logo-m">Our Clients</span>
       <div className="my-carousel">
         <AliceCarousel
           disableButtonsControls

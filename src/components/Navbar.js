@@ -31,7 +31,7 @@ const Navbar = () => {
       {isOverlayVisible && (
         <div className="fullscreen-overlay">
           <div className="over-flex">
-            <img src={logo}></img>
+            <img src={logo} className="nav-logo"></img>
             <img src={back} onClick={toggleOverlay}></img>
           </div>
           <div className="nav-items">
@@ -47,10 +47,10 @@ const Navbar = () => {
         </div>
       )}
       <div className="navbar">
-        <img src={logo}></img>
-        <div>
+        <img src={logo}className="nav-logo"></img>
+        <div className="nav-right-buttons">
           <button className="explore-button">Explore</button>
-          <img src={hamburger} onClick={toggleOverlay}></img>
+          <img src={hamburger} onClick={toggleOverlay} className="ham"></img>
         </div>
       </div>
     </>

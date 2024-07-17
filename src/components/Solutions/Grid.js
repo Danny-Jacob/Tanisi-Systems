@@ -1,10 +1,14 @@
 import React from 'react'
 import grid from  "../../assets/images/grid-img.svg"
+import grid2 from  "../../assets/images/Group 347.svg"
+
 const Grid = () => {
   return (<>
-    <div style={{textAlign:"center",fontSize:"35px" ,padding:"5rem 2rem"}}>Here is a brief list of the current<br></br> industries
+    <div className="grid-head" >Here is a brief list of the current<br></br> industries
     our clients belong in</div>
-    <img style={{width:'50%',display:'flex',margin:'0 auto'}} src={grid}></img>
+    <img  className="grid-w-img" src={grid}></img>
+    <img  className="grid-m-img"src={grid2}></img>
+
     <div style={{height:"5rem"}}></div>
     </>
   )

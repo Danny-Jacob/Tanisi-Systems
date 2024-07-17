@@ -61,8 +61,31 @@
   padding: 5rem;
   /* text-align: center; */
 }
+.head-logo-m{
+  display: flex;
+  justify-Content:center;
+  color:#2F61C3;
+  font-Size:35px;
+}
 .com-logo1{
   padding: 0;
   /* padding: 5rem; */
   /* text-align: center; */
+}
+@media screen and (max-width:800px) {
+  .video-content p {
+    color: black;
+    font-size: 20px;
+    font-family: "Raleway";
+  }
+  .com-logo{
+    padding: 2rem;
+    /* text-align: center; */
+  }
+  .head-logo-m{
+    display: flex;
+    justify-Content:center;
+    color:#2F61C3;
+    font-Size:x-large;
+  }
 }

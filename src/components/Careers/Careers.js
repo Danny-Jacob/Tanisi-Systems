@@ -1,15 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../Navbar";
 import main from "../../assets/images/car-main.svg";
 import img3 from "../../assets/images/comp_3.svg";
 import img4 from "../../assets/images/Group 265.svg";
 import Footer from "../Home/Footer";
-
 import "../../assets/styles/career.css";
 import Logo from "../Home/Logo";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 const Careers = () => {
   const navigate=useNavigate();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    state: "",
+    country: "",
+    phoneNumber: "",
+    file: null,
+  });
+
+  const handleChange = (e) => {
+    const { name, value, files } = e.target;
+    if (name === "file") {
+      setFormData({ ...formData, [name]: files[0] });
+    } else {
+      setFormData({ ...formData, [name]: value });
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = new FormData();
+    data.append("name", formData.name);
+    data.append("email", formData.email);
+    data.append("state", formData.state);
+    data.append("country", formData.country);
+    data.append("phoneNumber", formData.phoneNumber);
+    data.append("file", formData.file);
+
+    try {
+      const response = await axios.post("YOUR_API_ENDPOINT", data, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
+      console.log("Response:", response.data);
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
   return (
     <>
       <Navbar />
@@ -80,25 +119,78 @@ const Careers = () => {
         <br></br>
         <br></br>
         <br></br>
-        <div style={{ display: "flex", gap: "2rem", marginBottom:"2rem" }}>
-          <label>Name
-          <input type="text" placeholder="Name"></input></label>
-          <label>Email
-          <input type="text" placeholder="Email"></input></label>
-        </div>
-        <div style={{ display: "flex", gap: "2rem",marginBottom:"2rem"}}>
-        <label>State<input type="text" placeholder="State"></input></label>
-        <label>Country<input type="text" placeholder="Country"></input></label>
-        </div>
-        <div style={{ display: "flex", gap: "2rem" ,marginBottom:"2rem"}}>
-          <label>Phone number<input type="Number" placeholder="Mobile"></input></label>
-          <label>Upload file
-          <input type="file" accept="application/pdf" className="custom-choose"></input>
-          </label>
-        </div>
+        <form onSubmit={handleSubmit}>
+      <div style={{ display: "flex", gap: "2rem", marginBottom: "2rem" }}>
+        <label>
+          Name
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Email
+          <input
+            type="text"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+        </label>
+      </div>
+      <div style={{ display: "flex", gap: "2rem", marginBottom: "2rem" }}>
+        <label>
+          State
+          <input
+            type="text"
+            name="state"
+            placeholder="State"
+            value={formData.state}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Country
+          <input
+            type="text"
+            name="country"
+            placeholder="Country"
+            value={formData.country}
+            onChange={handleChange}
+          />
+        </label>
+      </div>
+      <div style={{ display: "flex", gap: "2rem", marginBottom: "2rem" }}>
+        <label>
+          Phone number
+          <input
+            type="number"
+            name="phoneNumber"
+            placeholder="Mobile"
+            value={formData.phoneNumber}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Upload file
+          <input
+            type="file"
+            name="file"
+            accept="application/pdf"
+            className="custom-choose"
+            onChange={handleChange}
+          />
+        </label>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
         </div>
       </div>
-      <Logo/>
+      {/* <Logo/> */}
       {/* <img src={img3} style={{ width: "100%" }}></img> */}
 
       <Footer />

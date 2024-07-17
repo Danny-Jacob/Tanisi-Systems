@@ -1,0 +1,14 @@
+.c4-m{
+    display: none;
+}
+.c4-w{
+    display: block;
+}
+@media screen and (max-width:800px) {
+    .c4-m{
+        display: block;
+    }
+    .c4-w{
+        display: none;
+    }
+}

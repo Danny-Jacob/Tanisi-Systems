@@ -16,7 +16,8 @@ align-items: flex-end;
 }
 .job_body{
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
+    flex-wrap: wrap;
     /* justify-content: space-between; */
 }
 .job_lable{
@@ -99,4 +100,21 @@ padding: 5rem 0;
     min-height: 20px;
     padding: 10px;
     font-size: 16px;
+}
+@media screen and (max-width:800px) {
+    .apply-main{
+        padding: 2rem;
+    }
+    .apply-body{
+        font-size: 14px;
+    }
+    .apply-head{
+        font-size: 24px;
+    }
+    .job_box{
+        padding: 1rem;
+    }
+    .job_title{
+        font-size: large;
+    }
 }

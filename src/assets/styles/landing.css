@@ -28,6 +28,7 @@
 
 .video-content h1 {
   font-size: 3rem;
+  font-family: "Raleway";
 }
 
 .video-content p {
@@ -66,6 +67,7 @@
   justify-Content:center;
   color:#2F61C3;
   font-Size:35px;
+  font-family: "Raleway";
 }
 .com-logo1{
   padding: 0;
@@ -87,5 +89,6 @@
     justify-Content:center;
     color:#2F61C3;
     font-Size:x-large;
+    font-family: "Raleway";
   }
 }

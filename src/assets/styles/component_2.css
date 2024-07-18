@@ -2,10 +2,12 @@
   color: #2f61c3;
   font-weight: bold;
   font-size: medium;
+  font-family: "Raleway";
 }
 .comp_2_desc {
   text-align: justify;
   font-size: xx-large;
+  font-family: "Raleway";
 }
 .comp_2 {
   padding: 8rem 2rem;
@@ -19,6 +21,7 @@
 .grid-head {
   text-align: center;
   font-size: 35px;
+  font-family: "Raleway";
   padding: 5rem 2rem;
 }
 .grid-m-img {
@@ -33,10 +36,12 @@
   .comp_2_desc {
     /* text-align: justify; */
     font-size: small;
+    font-family: "Raleway";
   }
   .grid-head {
     text-align: center;
     font-size: large;
+    font-family: "Raleway";
     padding: 5rem 2rem;
   }
   .grid-m-img {

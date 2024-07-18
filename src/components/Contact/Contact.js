@@ -9,8 +9,10 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <img src={main} style={{ width: "100%" }}></img>
-      <img src={img3} style={{ width: "100%" }}></img>
+      <div style={{height:"4rem"}}></div>
+
+      <img src={main} style={{ width: "100%" }}className="image_3"></img>
+      <img src={img3} style={{ width: "100%" }}className="image_3"></img>
       <div style={{ background: "black", color: "white" }} className="apply">
         <div className="apply-main">
           <span className="apply-head">Contact Us</span>
@@ -24,7 +26,7 @@ const Contact = () => {
           <br></br>
           <br></br>
           <br></br>
-          <div style={{ display: "flex", gap: "2rem", marginBottom: "2rem" }}>
+          <div className="apply-form-field">
             <label>
               First Name
               <input type="text" placeholder="Enter here"></input>
@@ -34,7 +36,7 @@ const Contact = () => {
               <input type="text" placeholder="Enter here"></input>
             </label>
           </div>
-          <div style={{ display: "flex", gap: "2rem", marginBottom: "2rem" }}>
+          <div className="apply-form-field">
             <label>
               Phone number<input type="Number" placeholder="Enter here"></input>
             </label>

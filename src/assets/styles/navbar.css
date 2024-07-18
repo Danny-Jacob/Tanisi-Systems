@@ -4,10 +4,11 @@
   flex-direction: row; /* Added */
   justify-content: space-between;
   padding: 1rem 2rem;
-  margin: 1rem 4rem;
+  /* margin: 1rem 4rem; */
   align-items: center;
-  background: transparent;
+  background: white;
   z-index: 99999;
+  position: fixed;
 }
 .explore-button {
   background: #c32f49;
@@ -15,6 +16,7 @@
   border: none;
   color: white;
   font-weight: bold;
+  font-family: "Raleway";
   padding: 0.5rem 1rem;
   margin-right: 1rem;
 }
@@ -52,12 +54,18 @@
 .nav-item-cs{
     /* font-weight: bold; */
     font-size: 35px;
+    font-family: "Raleway";
     cursor: pointer;
 }
 .nav-item-cs:hover{
     /* font-weight: bold; */
     font-size: 35px;
     color: #c32f49;
+    font-family: "Raleway";
+}
+
+.nav-right-buttons{
+  display: flex;
 }
 @media screen and (max-width:800px) {
   .navbar {
@@ -83,6 +91,7 @@
     padding: 0.5rem 1rem;
     margin-right: 1rem;
     font-size: 10px;
+    font-family: "Raleway";
   }
   .nav-right-buttons{
     display: flex;
@@ -110,10 +119,12 @@
     /* font-weight: bold; */
     font-size: 24px;
     cursor: pointer;
+    font-family: "Raleway";
 }
 .nav-item-cs:hover{
     /* font-weight: bold; */
     font-size: 24px;
     color: #c32f49;
+    font-family: "Raleway";
 }
 }

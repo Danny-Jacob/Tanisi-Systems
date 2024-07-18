@@ -13,7 +13,7 @@ const Solution = () => {
   return (
     <div>
       <Navbar/>
-      <div style={{height:"5rem"}}></div>
+      <div style={{height:"4rem"}}></div>
       <img src={ban1} className="image_3"></img>
       <>
         <div className="comp_2">

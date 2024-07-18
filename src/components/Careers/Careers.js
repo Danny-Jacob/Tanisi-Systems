@@ -52,8 +52,9 @@ const Careers = () => {
   return (
     <>
       <Navbar />
-      <img src={main} style={{ width: "100%" }}></img>
-      <img src={img3} style={{ width: "100%" }}></img>
+      <div style={{height:"4rem"}}></div>
+      <img src={main} style={{ width: "100%" }}className="image_3"></img>
+      <img src={img3} style={{ width: "100%" }}className="image_3"></img>
       <div className="comp_2">
         <div className="comp_2_heading">Jobs Posts</div>
         <div className="comp_2_desc">
@@ -87,8 +88,8 @@ const Careers = () => {
           </div>
         </div>
       </div>
-      <img src={img3} style={{ width: "100%" }}></img>
-      <img src={img4} style={{ width: "100%" }}></img>
+      <img src={img3} style={{ width: "100%" }}className="image_3"></img>
+      <img src={img4} style={{ width: "100%" }}className="image_3"></img>
 
       <div className="comp_2">
         <div className="comp_2_heading">
@@ -104,7 +105,7 @@ const Careers = () => {
           for the referral.
         </div>
       </div>
-      <img src={img3} style={{ width: "100%" }}></img>
+      <img src={img3} style={{ width: "100%" }}className="image_3"></img>
       <div style={{ background: "black", color: "white" }} className="apply">
         <div className="apply-main">
         <span className="apply-head">Apply Online</span>
@@ -120,7 +121,7 @@ const Careers = () => {
         <br></br>
         <br></br>
         <form onSubmit={handleSubmit}>
-      <div style={{ display: "flex", gap: "2rem", marginBottom: "2rem" }}>
+      <div className="apply-form-field">
         <label>
           Name
           <input
@@ -142,7 +143,7 @@ const Careers = () => {
           />
         </label>
       </div>
-      <div style={{ display: "flex", gap: "2rem", marginBottom: "2rem" }}>
+      <div className="apply-form-field">
         <label>
           State
           <input
@@ -164,7 +165,7 @@ const Careers = () => {
           />
         </label>
       </div>
-      <div style={{ display: "flex", gap: "2rem", marginBottom: "2rem" }}>
+      <div className="apply-form-field">
         <label>
           Phone number
           <input

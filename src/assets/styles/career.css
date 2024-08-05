@@ -39,6 +39,18 @@
   color: white;
   font-family: "Raleway";
 }
+.apply input[type="email"] {
+  /* margin: 2rem; */
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside the input */
+  border: 1px solid #ccccccb5; /* Light gray border */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  background: transparent;
+  color: white;
+  font-family: "Raleway";
+}
 .apply input[type="number"] {
   /* margin: 2rem; */
   width: 100%; /* Full width */
@@ -65,6 +77,11 @@
 
 /* Style the input field on focus */
 .apply input[type="text"]:focus {
+  border-color: #66afe9; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); /* Add a subtle shadow on focus */
+}
+.apply input[type="email"]:focus {
   border-color: #66afe9; /* Change border color on focus */
   outline: none; /* Remove default outline */
   box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); /* Add a subtle shadow on focus */
@@ -111,7 +128,34 @@
   gap: 2rem;
   margin-bottom: 2rem;
 }
+.submit-form-button{
+  border: none;
+  background: white;
+  border-radius: 10px;
+  font-weight: bold;
+  height: min-content;
+  padding: 1rem;
+  cursor: pointer;
+}
+.top-jd{
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 6rem 2rem 6rem;
+  align-items: center;
+}
+.bottom-jd{
+padding: 0rem 6rem 5rem 6rem; text-align: justify;
+}
 @media screen and (max-width: 800px) {
+  .top-jd{
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 2rem 2rem 2rem;
+    align-items: center;
+  }
+  .bottom-jd{
+  padding: 0rem 2rem 2rem 2rem; text-align: justify;
+  }
   .apply-main {
     padding: 2rem;
   }

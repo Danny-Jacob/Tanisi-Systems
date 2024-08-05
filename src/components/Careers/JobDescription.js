@@ -1,87 +1,105 @@
-import React from "react";
+// import React, { useState } from "react";
 import Navbar from "../Navbar";
 import img3 from "../../assets/images/comp_3.svg";
 import Footer from "../Home/Footer";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import "../../assets/styles/career.css";
 
 const JobDescription = () => {
+  const { jobId } = useParams();
+  const [jobs, setJobs] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const navigate = useNavigate();
+  const accessToken = localStorage.getItem("accessToken");
+  useEffect(() => {
+    const fetchJob = async () => {
+      try {
+        const response = await axios.get(
+          `http://localhost:5000/jobs?jobId=${jobId}`
+        );
+        setJobs(response.data.data);
+        console.log(jobs);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchJob();
+  }, [jobId]);
+  const [formData, setFormData] = useState({
+    fullname: "",
+    email: "",
+    gender: "",
+    experience: "",
+    state: "",
+    country: "",
+    mobile: "",
+    job_applied: "",
+    jobId: jobId,
+    resume: null,
+  });
+
+  const handleChange = (e) => {
+    const { name, value, type, files } = e.target;
+    setFormData({
+      ...formData,
+      [name]: type === "file" ? files[0] : value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const data = new FormData();
+    for (const key in formData) {
+      data.append(key, formData[key]);
+    }
+
+    try {
+      const response = await fetch("http://localhost:5000/applyJob", {
+        method: "POST",
+        body: data,
+      });
+
+      if (response.ok) {
+        console.log("Form submitted successfully");
+        // Handle success (e.g., show a message or redirect)
+      } else {
+        console.error("Form submission failed");
+        // Handle error
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
   return (
     <div>
       <Navbar />
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "2rem 6rem",
-          alignItems: "center",
-        }}
-      >
-        <div style={{ display: "grid" }}>
-          <div style={{ fontSize: "35px" }}>Software Engineer 2 </div>
-          <div style={{ display: "flex", color: "#888888" }}>
-            <div>Microsoft | &nbsp;</div>
-            <div>5-7 yrs | &nbsp;</div>
-            <div>Chandigarh, India</div>
+      {jobs.map((job) => (
+        <div>
+          <div className="top-jd"
+          >
+            <div style={{ display: "grid" }}>
+              <div style={{ fontSize: "35px" }}>{job.jobTitle}</div>
+              <div style={{ display: "flex", color: "#888888" }}>
+                <div>{job.company} | &nbsp;</div>
+                <div>{job.experience} yrs | &nbsp;</div>
+                <div>{job.jobType} | &nbsp;</div>
+                <div>{job.location}</div>
+              </div>
+            </div>
+          </div>
+          <div className='bottom-jd'>
+            <div dangerouslySetInnerHTML={{ __html: job.description }}></div>
           </div>
         </div>
-
-        {/* <button
-          style={{
-            padding: "1rem",
-            border: "none",
-            background: "#c32f49",
-            color: "white",
-            borderRadius: "10px",
-          }}
-          onclick="location.href='#section2'"
-        >
-          Apply
-        </button> */}
-      </div>
-      <div style={{ padding: "0rem 6rem 5rem 6rem", textAlign: "justify" }}>
-        <p>
-          {" "}
-          Microsoft Silicon and Cloud Hardware Infrastructure Engineering
-          (SCHIE) is the team behind Microsoft’s expanding Cloud Infrastructure
-          and responsible for powering Microsoft’s “Intelligent Cloud” mission.
-          SCHIE delivers the core infrastructure and foundational technologies
-          for Microsoft's over 200 online businesses including AI, Bing, MSN,
-          Office 365, Xbox Live, Skype, OneDrive and the Microsoft Azure
-          platform globally with our server and data center infrastructure,
-          security and compliance, operations, globalization, and manageability
-          solutions.
-        </p>
-        <p>
-          In partnership with the Azure Service teams, we are on a mission to
-          deliver the hardware, software, services, and infrastructure roadmap
-          that enables users to run technical computing workloads on Azure. Our
-          focus is on smart growth, high efficiency, and delivering a trusted
-          experience to customers and partners worldwide  The SCHIE HW
-          Diagnostic Engineering team plays a critical role in designing and
-          developing diagnostic software solutions for Server and Rack
-          Infrastructure components that are deployed for Microsoft's online
-          services.{" "}
-        </p>
-        We work closely with Microsoft product groups, industry partners and
-        researchers to architect and develop server diagnostics solutions to
-        support diagnostics and servicing of the hardware that supports our
-        cloud services platforms. We are looking for a highly motivated,
-        self-driven Software Engineer with a good understanding of Server and
-        Infrastructure Hardware components that are deployed in the Cloud Data
-        Centers and their Diagnostics using Linux Technologies and Open source
-        standards.
-        <p>
-          Preferred Qualifications
-          <li>
-            Hands on experience in developing Diagnostic Code as well as skills
-            to work in a laboratory environment is a plus.
-          </li>
-          <li>
-            In-depth knowledge of hardware, software, and cloud technologies
-          </li>
-          <li>Experience with cloud-scale architecture and infrastructure </li>
-        </p>
-      </div>
-
+      ))}
       <div
         id="section2"
         style={{ background: "black", color: "white" }}
@@ -100,37 +118,104 @@ const JobDescription = () => {
           <br></br>
           <br></br>
           <br></br>
-          <div style={{ display: "flex", gap: "2rem", marginBottom: "2rem" }}>
-            <label>
-              Name
-              <input type="text" placeholder="Name"></input>
-            </label>
-            <label>
-              Email
-              <input type="text" placeholder="Email"></input>
-            </label>
-          </div>
-          <div style={{ display: "flex", gap: "2rem", marginBottom: "2rem" }}>
-            <label>
-              State<input type="text" placeholder="State"></input>
-            </label>
-            <label>
-              Country<input type="text" placeholder="Country"></input>
-            </label>
-          </div>
-          <div style={{ display: "flex", gap: "2rem", marginBottom: "2rem" }}>
-            <label>
-              Phone number<input type="Number" placeholder="Mobile"></input>
-            </label>
-            <label>
-              Upload file
-              <input
-                type="file"
-                accept="application/pdf"
-                className="custom-choose"
-              ></input>
-            </label>
-          </div>
+          <form onSubmit={handleSubmit}>
+            <div className="apply-form-field">
+              <label>
+                Full Name
+                <input
+                  type="text"
+                  name="fullname"
+                  placeholder="Name"
+                  onChange={handleChange}
+                />
+              </label>
+              <label>
+                Email
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="Email"
+                  onChange={handleChange}
+                />
+              </label>
+            </div>
+            <div className="apply-form-field">
+              <label>
+                Gender
+                <input
+                  type="text"
+                  name="gender"
+                  placeholder="Gender"
+                  onChange={handleChange}
+                />
+              </label>
+              <label>
+                Experience
+                <input
+                  type="number"
+                  name="experience"
+                  placeholder="Experience"
+                  onChange={handleChange}
+                />
+              </label>
+            </div>
+            <div className="apply-form-field">
+              <label>
+                State
+                <input
+                  type="text"
+                  name="state"
+                  placeholder="State"
+                  onChange={handleChange}
+                />
+              </label>
+              <label>
+                Country
+                <input
+                  type="text"
+                  name="country"
+                  placeholder="Country"
+                  onChange={handleChange}
+                />
+              </label>
+            </div>
+            <div className="apply-form-field">
+              <label>
+                Phone number
+                <input
+                  type="number"
+                  name="mobile"
+                  placeholder="Mobile"
+                  onChange={handleChange}
+                />
+              </label>
+
+              <label>
+                Job Role
+                <input
+                  type="text"
+                  name="job_applied"
+                  placeholder="Job Role"
+                  onChange={handleChange}
+                />
+              </label>
+            </div>
+            <div className="apply-form-field">
+              <label>
+                Upload file
+                <input
+                  type="file"
+                  name="resume"
+                  accept="application/pdf"
+                  onChange={handleChange}
+                  className="custom-choose"
+                />
+              </label>
+              <button type="submit" className="submit-form-button">
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
       </div>
       <img src={img3} style={{ width: "100%" }}></img>

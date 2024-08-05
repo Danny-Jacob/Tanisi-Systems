@@ -18,7 +18,7 @@ function App() {
         <Route path="/solutions" element={<Solution />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/apply" element={<JobDescription />} />
+        <Route path="/apply/:jobId" element={<JobDescription />} />
       </Routes>
     </Router>
       </>

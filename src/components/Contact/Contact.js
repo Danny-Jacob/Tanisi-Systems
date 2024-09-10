@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar";
-import main from "../../assets/images/Mask group (6).svg";
+import main from "../../assets/images/Image07.jpg";
 import img3 from "../../assets/images/comp_3.svg";
 import Footer from "../Home/Footer";
 import Logo from "../Home/Logo";

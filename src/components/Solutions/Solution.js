@@ -1,6 +1,6 @@
 import React from "react";
-import ban1 from "../../assets/images/banner-1.svg";
-import ban2 from "../../assets/images/banner-2.svg";
+import ban1 from "../../assets/images/Image02.jpg";
+import ban2 from "../../assets/images/Image03.jpg";
 import img3 from "../../assets/images/comp_3.svg";
 import "../../assets/styles/component_2.css";
 import Grid from "./Grid";
@@ -29,7 +29,7 @@ const Solution = () => {
             are able to deliver on those needs.
           </div>
         </div>
-
+        <div style={{height:"8rem"}}></div>
         <img src={img3} className="image_3"></img>
         <img src={ban2} className="image_3"></img>
       </>

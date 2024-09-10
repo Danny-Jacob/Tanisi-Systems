@@ -2,7 +2,7 @@ import React from "react";
 import "../../assets/styles/component_3.css";
 import line from "../../assets/images/Vector 3.svg";
 import img3 from "../../assets/images/comp_3.svg";
-import img4 from "../../assets/images/image-group.svg";
+import img4 from "../../assets/images/Image01.jpg";
 
 
 const Component_3 = () => {

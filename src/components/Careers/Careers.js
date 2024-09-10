@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar";
-import main from "../../assets/images/car-main.svg";
+import main from "../../assets/images/Image05.jpg";
 import img3 from "../../assets/images/comp_3.svg";
-import img4 from "../../assets/images/Group 265.svg";
+import img4 from "../../assets/images/Image06.jpg";
 import Footer from "../Home/Footer";
 import "../../assets/styles/career.css";
 import Logo from "../Home/Logo";
@@ -124,8 +124,13 @@ const Careers = () => {
         )}
       </div>
       <img src={img3} style={{ width: "100%" }} className="image_3"></img>
-      <img src={img4} style={{ width: "100%" }} className="image_3"></img>
-
+      {/* <img src={img4} style={{ width: "100%" }} className="image_3"></img> */}
+      <div className="image-container">
+      <img src={img4} alt="Your Image" className="background-image" />
+      <div className="centered-text">
+        <p>Referral Policy</p>
+      </div>
+    </div>
       <div className="comp_2">
         <div className="comp_2_heading">
           Tanisi Systems Inc has an aggressive Employee Referral Policy.
@@ -140,6 +145,7 @@ const Careers = () => {
           for the referral.
         </div>
       </div>
+      <div style={{height:"8rem"}}></div>
       <img src={img3} style={{ width: "100%" }} className="image_3"></img>
       <div style={{ background: "black", color: "white" }} className="apply">
         <div className="apply-main">

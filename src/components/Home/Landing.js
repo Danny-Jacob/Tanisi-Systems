@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../assets/styles/landing.css";
 import video from "../../assets/videos/landing.mp4";
 
@@ -13,15 +13,43 @@ import Navbar from "../Navbar";
 import Solution from "../Solutions/Solution";
 
 const Landing = () => {
-  
+  // const [navbarStyle, setNavbarStyle] = useState({
+  //   backgroundColor: "transparent",
+  //   boxShadow: "none",
+  // });
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     // Check if the scroll position is more than 100vh
+  //     if (window.scrollY > window.innerHeight) {
+  //       setNavbarStyle({
+  //         backgroundColor: "white",
+  //         boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+  //       });
+  //     } else {
+  //       setNavbarStyle({
+  //         backgroundColor: "transparent",
+  //         boxShadow: "none",
+  //       });
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   // Cleanup the event listener on component unmount
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
   return (
     <>
       <div className="video-background">
+     
        <Navbar/>
-        <video autoPlay muted loop>
+        {/* <video autoPlay muted loop>
           <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
         <div className="video-content">
           <p>
             Your IT application solutions

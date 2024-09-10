@@ -15,4 +15,25 @@
   .logo-rotator img.active {
     opacity: 1;
   }
+  .image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 400px;  */
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the entire container */
+  }
+  
+  .centered-text {
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+  }
   

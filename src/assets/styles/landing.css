@@ -3,6 +3,9 @@
   width: -webkit-fill-available;
   height: 100vh;
   overflow: hidden;
+  background-image: url('../images//Group\ 264.svg'); /* Replace with the path to your image */
+  background-size: cover; /* This will ensure the image covers the entire element */
+  background-position: center;
 }
 
 .video-background video {
@@ -19,11 +22,11 @@
 
 .video-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 38%;
+  left: 2rem;
+  /* transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  color: white; */
 }
 
 .video-content h1 {

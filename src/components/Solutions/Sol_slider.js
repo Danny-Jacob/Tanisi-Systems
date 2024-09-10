@@ -7,7 +7,7 @@ import client4 from "../../assets/images/Group 255.svg";
 import client6 from "../../assets/images/Group 256.svg";
 import client8 from "../../assets/images/Group 257.svg";
 import img3 from "../../assets/images/comp_3.svg";
-import img4 from "../../assets/images/img04.svg";
+import img4 from "../../assets/images/Image04.jpg";
 
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
@@ -28,7 +28,13 @@ const Sol_slider = () => {
   return (
     <>
       <img src={img3} className="image_3"></img>
-      <img src={img4} className="image_3"></img>
+      {/* <img src={img4} className="image_3"></img> */}
+      <div className="image-container">
+      <img src={img4} alt="Your Image" className="background-image" />
+      <div className="centered-text">
+        <p>Staffing Approach and Scope</p>
+      </div>
+    </div>
       <div className="com-logo1">
        
         <div className="my-carousel">

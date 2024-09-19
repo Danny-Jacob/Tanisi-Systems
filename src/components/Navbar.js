@@ -27,34 +27,34 @@ const Navbar = () => {
   const toggleOverlay = () => {
     setIsOverlayVisible(!isOverlayVisible);
   };
-  const [navbarStyle, setNavbarStyle] = useState({
-    backgroundColor: "transparent",
-    boxShadow: "none",
-  });
+  // const [navbarStyle, setNavbarStyle] = useState({
+  //   backgroundColor: "transparent",
+  //   boxShadow: "none",
+  // });
 
-  useEffect(() => {
-    const handleScroll = () => {
-      // Check if the scroll position is more than 100vh
-      if (window.scrollY > window.innerHeight) {
-        setNavbarStyle({
-          backgroundColor: "white",
-          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-        });
-      } else {
-        setNavbarStyle({
-          backgroundColor: "transparent",
-          boxShadow: "none",
-        });
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     // Check if the scroll position is more than 100vh
+  //     if (window.scrollY > window.innerHeight) {
+  //       setNavbarStyle({
+  //         backgroundColor: "white",
+  //         boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+  //       });
+  //     } else {
+  //       setNavbarStyle({
+  //         backgroundColor: "transparent",
+  //         boxShadow: "none",
+  //       });
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    // Cleanup the event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   // Cleanup the event listener on component unmount
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
   return (
     <>
       {isOverlayVisible && (

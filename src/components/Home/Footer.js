@@ -28,7 +28,7 @@ const Footer = () => {
             <span>CAREERS</span>
             <span>Contact</span>
           </div>
-          <div style={{ display: "grid", gap: "1rem", height: "fit-content" }}>
+          {/* <div style={{ display: "grid", gap: "1rem", height: "fit-content" }}>
             <span>Follow Us </span>
             <div style={{ display: "flex" , gap:"0.5rem" }}>
               <img src={s1}></img>
@@ -38,7 +38,7 @@ const Footer = () => {
               <img src={s5}></img>
 
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div style={{ background: "#2F61C3", color: "white" }}>
@@ -73,7 +73,7 @@ const Footer = () => {
             <span>CAREERS</span>
             <span>Contact</span>
           </div>
-          <div style={{ display: "grid", gap: "1rem", height: "fit-content" }}>
+          {/* <div style={{ display: "grid", gap: "1rem", height: "fit-content" }}>
             <span>Follow Us </span>
             <div style={{ display: "flex" , gap:"0.5rem" }}>
               <img src={s1}></img>
@@ -83,7 +83,7 @@ const Footer = () => {
               <img src={s5}></img>
 
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div style={{ background: "#2F61C3", color: "white" }}>

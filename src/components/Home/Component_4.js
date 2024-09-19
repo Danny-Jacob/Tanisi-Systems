@@ -6,7 +6,7 @@ const Component_4 = () => {
     <>
       <div className="c4-w">
         <div style={{ background: `url(${imgban})`, padding: "10rem" }}>
-          <span style={{ fontSize: "65px", position: "inherit" }}>
+          <span style={{ fontSize: "44px", position: "inherit" }}>
             WE APPRECIATE YOUR <br />
             INTEREST IN US!
           </span>{" "}

@@ -50,8 +50,8 @@ const Landing = () => {
           <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video> */}
-        <div className="video-content">
-          <p>
+        <div className="video-content" style={{color:"#BF2F4A"}}>
+          <p style={{color:"#BF2F4A",fontWeight:""}}>
             Your IT application solutions
             <br />
             and service partners

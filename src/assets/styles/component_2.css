@@ -1,12 +1,19 @@
 .comp_2_heading {
   color: #2f61c3;
+  /* color: rgb(191, 47, 74); */
+
   font-weight: bold;
   font-size: medium;
   font-family: "Raleway";
 }
 .comp_2_desc {
   text-align: justify;
-  font-size: xx-large;
+  font-size: x-large;
+  font-family: "Raleway";
+}
+.comp_2_desc_dev {
+  text-align: justify;
+  font-size: x-large;
   font-family: "Raleway";
 }
 .comp_2 {
@@ -58,3 +65,38 @@
     margin: 0 auto;
   }
 }
+.table-container {
+  overflow-x: auto; /* Enable horizontal scrolling on small screens */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a subtle elevation effect */
+}
+
+/* Styling for the main table */
+.responsive-table {
+  width: 100%;
+  min-width: 1000px; /* Ensure table is wider than screen on small devices */
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.responsive-table thead tr {
+  background-color: rgb(191, 47, 74); /* Header background color */
+  color: #fff;
+}
+
+.responsive-table th, .responsive-table td {
+  padding: 12px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  border-bottom: 1px solid #ddd;
+}
+
+.responsive-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternating row background */
+}
+
+.responsive-table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+

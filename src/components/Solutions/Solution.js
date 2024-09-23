@@ -30,11 +30,14 @@ const Solution = () => {
           </div>
         </div>
         <div style={{height:"8rem"}}></div>
-        <img src={img3} className="image_3"></img>
-        <img src={ban2} className="image_3"></img>
+        
       </>
-      <Grid/>
+      
       <Sol_slider/>
+      <div style={{height:"8rem"}}></div>
+      <img src={img3} className="image_3"></img>
+        <img src={ban2} className="image_3"></img>
+      <Grid/>
       <Skill/>
       <Footer/>
     </div>

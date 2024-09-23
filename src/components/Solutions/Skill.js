@@ -6,7 +6,7 @@ const Skill = () => {
   return (
     <div>
       <div className="comp_2">
-        <div className="comp_2_heading">Technology Skills Sets</div>
+        <div className="comp_2_heading">Staffing Technology Skills Sets</div>
         <div className="comp_2_desc">
           Technology is changing rapidly. It's difficult to stay ahead without
           proper experience in multiple technologies. Tanisi assesses your needs

@@ -1,8 +1,6 @@
 import React from "react";
 import "../../assets/styles/component_3.css";
 import line from "../../assets/images/Vector 3.svg";
-import img3 from "../../assets/images/comp_3.svg";
-import img4 from "../../assets/images/Image01.jpg";
 
 
 const Component_3 = () => {
@@ -11,7 +9,7 @@ const Component_3 = () => {
       <article>
         {/* <div class="category">REPTILES AND AVES</div> */}
         <div class="title">
-          <div className="left-head">Tanisi Systems Inc</div>
+          <div className="left-head">Tanisi Systems</div>
           <div>
             Tanisi and its affiliates deliver the services through their
             multiple offices in United States . The goal has been to offer Top
@@ -23,50 +21,95 @@ const Component_3 = () => {
         <div className="right-flex">
           <div className="vertical"></div>
           <div className="right">
+          <div className="right-items">
+              
+              Smart Solutions
+                <div style={{height:"1rem"}}></div>              
+                <span class="centered-content">
+                  <img src={line} alt="Line Image" />
+                  IOT Testing Labs
+                </span>
+                <span class="centered-content">
+                  <img src={line} alt="Line Image" />
+                  Streaming Analytics
+                </span>
+                <span class="centered-content">
+                  <img src={line} alt="Line Image" />
+                  Wearable Solutions
+                </span>
+                <span class="centered-content">
+                  <img src={line} alt="Line Image" />
+                  IOT Solutions
+                </span>
+                               
+              </div>
+              <div className="right-items">
+              
+              Software Solutions
+                <div style={{height:"1rem"}}></div>              
+                <span class="centered-content">
+                  <img src={line} alt="Line Image" />
+                  Custom software development
+                </span>
+                <span class="centered-content">
+                  <img src={line} alt="Line Image" />
+                  Scalable, efficient systems
+                </span>
+                <span class="centered-content">
+                  <img src={line} alt="Line Image" />
+                  Integration with existing platforms
+                </span>
+                <span class="centered-content">
+                  <img src={line} alt="Line Image" />
+                  Enhance business productivity
+                </span>
+                               
+              </div>
             <div className="right-items">
               Workforce Optimization
               <div style={{height:"1rem"}}></div>    
               <span class="centered-content">
                 <img src={line} alt="Line Image" />
-                Innovative Technologies
+                Innovative technology solutions
               </span>
               <span class="centered-content">
                 <img src={line} alt="Line Image" />
-                Increased Efficiencies Leading Edge Solutions
+                Achieve client excellence
               </span>
               <span class="centered-content">
                 <img src={line} alt="Line Image" />
-                End-Goal
+                Assess staffing spend, rates
               </span>
               <span class="centered-content">
                 <img src={line} alt="Line Image" />
                 Client Excellence.
-              </span>              
+              </span>   
+              <span class="centered-content">
+                <img src={line} alt="Line Image" />
+                Recommend recruiting realignment
+              </span>            
             </div>
             <div className="right-items">
               
-              MSP
+            MSP
               <div style={{height:"1rem"}}></div>              
               <span class="centered-content">
                 <img src={line} alt="Line Image" />
-                From overall
+                Program management & billing
               </span>
               <span class="centered-content">
                 <img src={line} alt="Line Image" />
-                Program Management
+                Dedicated responsive team
               </span>
               <span class="centered-content">
                 <img src={line} alt="Line Image" />
-                Cost Effective
+                On-call for staffing needs
               </span>
               <span class="centered-content">
                 <img src={line} alt="Line Image" />
-                Staffing Solution.
+                Technology-driven effectiveness
               </span>
-              <span class="centered-content">
-                <img src={line} alt="Line Image" />
-                Into your Workforce.
-              </span>               
+                             
             </div>
             <div className="right-items">
               
@@ -74,44 +117,23 @@ const Component_3 = () => {
               <div style={{height:"1rem"}}></div>              
               <span class="centered-content">
                 <img src={line} alt="Line Image" />
-                Submittal Response Time
+                Fast submittal response time
               </span>
               <span class="centered-content">
                 <img src={line} alt="Line Image" />
-                Retention/Project Completion
+                High retention/completion rates
               </span>
               <span class="centered-content">
                 <img src={line} alt="Line Image" />
-                Orders Received
+                Optimal placement ratios
               </span>
               <span class="centered-content">
                 <img src={line} alt="Line Image" />
-                to Placement Ratios
+                Efficient FTE conversions
               </span>
                             
             </div>
-            <div className="right-items">
-              
-            Smart Solutions
-              <div style={{height:"1rem"}}></div>              
-              <span class="centered-content">
-                <img src={line} alt="Line Image" />
-                IOT Testing Labs
-              </span>
-              <span class="centered-content">
-                <img src={line} alt="Line Image" />
-                Streaming Analytics
-              </span>
-              <span class="centered-content">
-                <img src={line} alt="Line Image" />
-                Wearable Solutions
-              </span>
-              <span class="centered-content">
-                <img src={line} alt="Line Image" />
-                IOT Solutions
-              </span>
-                             
-            </div>
+            
             
           </div>
         </div>
@@ -120,7 +142,7 @@ const Component_3 = () => {
     <div style={{height:"20rem"}}className="c3-m-h"></div> 
     <div className="c3-mobile">
     
-          <div className="left-head">Tanisi Systems Inc</div>
+          <div className="left-head">Tanisi Systems </div>
           <div className="left-m-dec">
             Tanisi and its affiliates deliver the services through their
             multiple offices in United States . The goal has been to offer Top
@@ -219,8 +241,7 @@ const Component_3 = () => {
             </div>
         
     </div>
-    <img src={img3} className="image_3"></img>
-    <img src={img4} className="image_3"></img>
+    
 
     </>
   );

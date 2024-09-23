@@ -11,52 +11,52 @@ import axios from "axios";
 const Careers = () => {
   const navigate = useNavigate();
   // apply job
-  const [formData, setFormData] = useState({
-    fullname: "",
-    email: "",
-    gender: "",
-    experience: "",
-    state: "",
-    country: "",
-    mobile: "",
-    job_applied: "",
-    jobId: "6CkW45z62WqxCxEQkbrEvu",
-    resume: null,
-  });
+  // const [formData, setFormData] = useState({
+  //   fullname: "",
+  //   email: "",
+  //   gender: "",
+  //   experience: "",
+  //   state: "",
+  //   country: "",
+  //   mobile: "",
+  //   job_applied: "",
+  //   jobId: "6CkW45z62WqxCxEQkbrEvu",
+  //   resume: null,
+  // });
 
-  const handleChange = (e) => {
-    const { name, value, type, files } = e.target;
-    setFormData({
-      ...formData,
-      [name]: type === "file" ? files[0] : value,
-    });
-  };
+  // const handleChange = (e) => {
+  //   const { name, value, type, files } = e.target;
+  //   setFormData({
+  //     ...formData,
+  //     [name]: type === "file" ? files[0] : value,
+  //   });
+  // };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-    const data = new FormData();
-    for (const key in formData) {
-      data.append(key, formData[key]);
-    }
+  //   const data = new FormData();
+  //   for (const key in formData) {
+  //     data.append(key, formData[key]);
+  //   }
 
-    try {
-      const response = await fetch("http://localhost:5000/applyJob", {
-        method: "POST",
-        body: data,
-      });
+  //   try {
+  //     const response = await fetch("http://localhost:5000/applyJob", {
+  //       method: "POST",
+  //       body: data,
+  //     });
 
-      if (response.ok) {
-        console.log("Form submitted successfully");
-        // Handle success (e.g., show a message or redirect)
-      } else {
-        console.error("Form submission failed");
-        // Handle error
-      }
-    } catch (error) {
-      console.error("Error:", error);
-    }
-  };
+  //     if (response.ok) {
+  //       console.log("Form submitted successfully");
+  //       // Handle success (e.g., show a message or redirect)
+  //     } else {
+  //       console.error("Form submission failed");
+  //       // Handle error
+  //     }
+  //   } catch (error) {
+  //     console.error("Error:", error);
+  //   }
+  // };
   // getalljobs
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -125,7 +125,7 @@ const Careers = () => {
       </div>
       <img src={img3} style={{ width: "100%" }} className="image_3"></img>
       {/* <img src={img4} style={{ width: "100%" }} className="image_3"></img> */}
-      <div className="image-container">
+      {/* <div className="image-container">
       <img src={img4} alt="Your Image" className="background-image" />
       <div className="centered-text">
         <p>Referral Policy</p>
@@ -144,9 +144,9 @@ const Careers = () => {
           first three months at the project site, you will receive a $600 bonus
           for the referral.
         </div>
-      </div>
-      <div style={{height:"8rem"}}></div>
-      <img src={img3} style={{ width: "100%" }} className="image_3"></img>
+      </div> */}
+      {/* <div style={{height:"8rem"}}></div> */}
+      {/* <img src={img3} style={{ width: "100%" }} className="image_3"></img>
       <div style={{ background: "black", color: "white" }} className="apply">
         <div className="apply-main">
           <span className="apply-head">Apply Online</span>
@@ -260,7 +260,7 @@ const Careers = () => {
             </div>
           </form>
         </div>
-      </div>
+      </div> */}
       {/* <Logo/> */}
       {/* <img src={img3} style={{ width: "100%" }}></img> */}
 

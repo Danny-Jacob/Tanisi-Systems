@@ -26,7 +26,7 @@ const Logo = () => {
 
   const handleDragStart = (e) => e.preventDefault(); // Prevent drag image
 
-  return (<>
+  return (<>   
     <div className="com-logo">
       <span className="head-logo-m">Our Clients</span>
       <div className="my-carousel">

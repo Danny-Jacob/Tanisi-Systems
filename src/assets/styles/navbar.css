@@ -31,7 +31,7 @@
     255,
     255,
     255,
-    0.6
+    0.7
   ); /* Adjust the alpha value for transparency */
   backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
   border-radius: 10px;
@@ -58,11 +58,23 @@
     font-family: "Raleway";
     cursor: pointer;
 }
+.nav-subitem-cs{
+  text-align: right;
+    font-size: larger;
+    font-family: "Raleway";
+    cursor: pointer;
+}
 .nav-item-cs:hover{
     /* font-weight: bold; */
     font-size: 35px;
     color: #c32f49;
     font-family: "Raleway";
+}
+.nav-subitem-cs:hover{
+  /* font-weight: bold; */
+  font-size: larger;
+  color: #c32f49;
+  font-family: "Raleway";
 }
 
 .nav-right-buttons{

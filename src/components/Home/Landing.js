@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../../assets/styles/landing.css";
 import video from "../../assets/videos/landing.mp4";
+import img3 from "../../assets/images/comp_3.svg";
+import img4 from "../../assets/images/Image01.jpg";
 
 import Component_2 from "./Component_2";
 import Component_3 from "./Component_3";
@@ -61,8 +63,11 @@ const Landing = () => {
       </div>
       <Component_2/>
       <Component_3/>
+      <img src={img3} className="image_3"></img>
+   <img src={img4} className="image_3"></img>
       <Logo/>
       {/* <Testimonial/> */}
+
       <Component_4></Component_4>
       <Footer/>
     </>

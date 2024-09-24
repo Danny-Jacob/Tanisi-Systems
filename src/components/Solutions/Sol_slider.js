@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "../../assets/styles/logo.css"; // Import CSS file for styling
-import client1 from "../../assets/images/Group 252.svg";
-import client2 from "../../assets/images/Group 253.svg";
-import client3 from "../../assets/images/Group 254.svg";
-import client4 from "../../assets/images/Group 255.svg";
-import client6 from "../../assets/images/Group 256.svg";
-import client8 from "../../assets/images/Group 257.svg";
+import client1 from "../../assets/images/Step 01.jpg";
+import client2 from "../../assets/images/Step 02.jpg";
+import client3 from "../../assets/images/Step 03.jpg";
+import client4 from "../../assets/images/Step 04.jpg";
+import client6 from "../../assets/images/Step 05.jpg";
+import client8 from "../../assets/images/Step 06.jpg";
 import img3 from "../../assets/images/comp_3.svg";
 import img4 from "../../assets/images/Image04.jpg";
 

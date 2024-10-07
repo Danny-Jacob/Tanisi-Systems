@@ -10,9 +10,9 @@ const Component_3 = () => {
         {/* <div class="category">REPTILES AND AVES</div> */}
         <div class="title">
           <div className="left-head">Tanisi Systems</div>
-          <div>
+          <div className="left-m-dec">
             Tanisi and its affiliates deliver the services through their
-            multiple offices in United States . The goal has been to offer Top
+            multiple offices in United States. The goal has been to offer Top
             companies the comprehensive skill and knowledge set, intellectual
             rigor and proven methodologies of a Big Five firm, but with the
             focused client service and nimbleness of a boutique consultancy.
@@ -143,7 +143,7 @@ const Component_3 = () => {
     <div className="c3-mobile">
     
           <div className="left-head">Tanisi Systems </div>
-          <div className="left-m-dec">
+          <div className="left-m-dec" style={{textAlign:"justify"}}>
             Tanisi and its affiliates deliver the services through their
             multiple offices in United States . The goal has been to offer Top
             companies the comprehensive skill and knowledge set, intellectual

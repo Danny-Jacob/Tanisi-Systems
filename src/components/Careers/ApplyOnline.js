@@ -11,7 +11,7 @@ const ApplyOnline = () => {
   const [formData, setFormData] = useState({
     fullname: "",
     email: "",
-    gender: "",
+    
     experience: "",
     state: "",
     country: "",

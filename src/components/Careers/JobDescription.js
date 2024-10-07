@@ -35,7 +35,7 @@ const JobDescription = () => {
   const [formData, setFormData] = useState({
     fullname: "",
     email: "",
-    gender: "",
+   
     experience: "",
     state: "",
     country: "",
@@ -140,12 +140,21 @@ const JobDescription = () => {
               </label>
             </div>
             <div className="apply-form-field">
-              <label>
+              {/* <label>
                 Gender
                 <input
                   type="text"
                   name="gender"
                   placeholder="Gender"
+                  onChange={handleChange}
+                />
+              </label> */}
+              <label>
+                Job Role
+                <input
+                  type="text"
+                  name="job_applied"
+                  placeholder="Job Role"
                   onChange={handleChange}
                 />
               </label>
@@ -179,7 +188,7 @@ const JobDescription = () => {
                 />
               </label>
             </div>
-            <div className="apply-form-field">
+            <div className="apply-form-field" style={{width:"50%"}}>
               <label>
                 Phone number
                 <input
@@ -190,7 +199,7 @@ const JobDescription = () => {
                 />
               </label>
 
-              <label>
+              {/* <label>
                 Job Role
                 <input
                   type="text"
@@ -198,7 +207,7 @@ const JobDescription = () => {
                   placeholder="Job Role"
                   onChange={handleChange}
                 />
-              </label>
+              </label> */}
             </div>
             <div className="apply-form-field">
               <label>

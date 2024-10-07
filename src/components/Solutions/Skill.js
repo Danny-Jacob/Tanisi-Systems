@@ -18,32 +18,32 @@ const Skill = () => {
               <div style={{height:"1rem"}}></div>    
               <span class="centered-content1">
                 <img src={line} alt="Line Image" />
-                .NET Technologies - C#, ASP.NET, VB.NETs
+                .NET 6/7, Blazor
               </span>
               <span class="centered-content1">
                 <img src={line} alt="Line Image" />
-                SharePoint Server
+                SharePoint Online, Notion
               </span>
               <span class="centered-content1">
                 <img src={line} alt="Line Image" />
-                Network Security
+                Zero Trust, Cloud Security
               </span>
               <span class="centered-content1">
                 <img src={line} alt="Line Image" />
-                IPhone, Android & Mobile App
+                React Native, Flutter, React, Angular
               </span>
               <span class="centered-content1">
                 <img src={line} alt="Line Image" />
-                Enterprise Applications
+                Microservices, Kubernetes
               </span><span class="centered-content1">
                 <img src={line} alt="Line Image" />
-                Flex, Silverlight & AjaxJAVA & J2EE
+                Spring Boot, Micronaut
               </span><span class="centered-content1">
                 <img src={line} alt="Line Image" />
-                SOA & SaaS
+                Serverless, GraphQL
               </span><span class="centered-content1">
                 <img src={line} alt="Line Image" />
-                Big Data
+                TensorFlow, Spark
               </span>              
             </div>
             <div style={{height:"1rem"}}></div>  

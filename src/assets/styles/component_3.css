@@ -13,7 +13,7 @@
     /* height: 200vh; */
 }
 .left-head{
-    padding-top: 100px;
+    padding-top: 65px;
     padding-bottom: 25px;
     color: rgb(191, 47, 74);
     font-size: 65px;
@@ -43,7 +43,7 @@
     /* text-align: center; */
 }
 .centered-content1 {
-    font-size: xx-large;
+    font-size: x-large;
     color: black;
     font-family: "Raleway";
     /* padding-left: 1rem; */
@@ -115,7 +115,11 @@ article {
 .c3-mobile{
     display: none;
 }
-
+.left-m-dec{
+    font-size: large;
+    font-family: "Raleway";
+    text-align: justify;
+}
 @media screen and (max-width:800px) {
     .component_3{
         display: none;
@@ -148,6 +152,8 @@ article {
         font-size: small;
         font-family: "Raleway";
         padding-bottom: 2rem;
+        text-align: justify;
+
     }
     .c3-m-h{
         display: none;

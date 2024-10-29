@@ -81,8 +81,8 @@ const Careers = () => {
     <>
       <Navbar />
       <div style={{ height: "4rem" }}></div>
-      <img src={main} style={{ width: "100%" }} className="image_3"></img>
-      <img src={img3} style={{ width: "100%" }} className="image_3"></img>
+      <img loading="lazy" src={main} style={{ width: "100%" }} className="image_3"></img>
+      <img loading="lazy" src={img3} style={{ width: "100%" }} className="image_3"></img>
       <div className="comp_2">
         <div className="comp_2_heading">Jobs Posts</div>
         <div className="comp_2_desc">
@@ -123,10 +123,10 @@ const Careers = () => {
             )
         )}
       </div>
-      <img src={img3} style={{ width: "100%" }} className="image_3"></img>
-      {/* <img src={img4} style={{ width: "100%" }} className="image_3"></img> */}
+      <img loading="lazy" src={img3} style={{ width: "100%" }} className="image_3"></img>
+      {/* <img loading="lazy" src={img4} style={{ width: "100%" }} className="image_3"></img> */}
       {/* <div className="image-container">
-      <img src={img4} alt="Your Image" className="background-image" />
+      <img loading="lazy" src={img4} alt="Your Image" className="background-image" />
       <div className="centered-text">
         <p>Referral Policy</p>
       </div>
@@ -146,7 +146,7 @@ const Careers = () => {
         </div>
       </div> */}
       {/* <div style={{height:"8rem"}}></div> */}
-      {/* <img src={img3} style={{ width: "100%" }} className="image_3"></img>
+      {/* <img loading="lazy" src={img3} style={{ width: "100%" }} className="image_3"></img>
       <div style={{ background: "black", color: "white" }} className="apply">
         <div className="apply-main">
           <span className="apply-head">Apply Online</span>
@@ -262,7 +262,7 @@ const Careers = () => {
         </div>
       </div> */}
       {/* <Logo/> */}
-      {/* <img src={img3} style={{ width: "100%" }}></img> */}
+      {/* <img loading="lazy" src={img3} style={{ width: "100%" }}></img> */}
 
       <Footer />
       {/* <div>Careers</div> */}

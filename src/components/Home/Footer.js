@@ -14,7 +14,7 @@ const Footer = () => {
       <div style={{ background: "black", color: "white", padding: "10rem" }}>
         <div style={{ display: "flex", justifyContent: "space-between" , alignItems: "flex-end" }}>
           <div style={{ display: "grid", gap: "1rem"}}>
-            <img src={foot}></img>
+            <img loading="lazy" src={foot}></img>
             <div style={{ height: "1rem" }}></div>
             <span>
               Address:<br></br>22503 Katy Freeway, Suite 511, Katy TX 77450
@@ -31,11 +31,11 @@ const Footer = () => {
           {/* <div style={{ display: "grid", gap: "1rem", height: "fit-content" }}>
             <span>Follow Us </span>
             <div style={{ display: "flex" , gap:"0.5rem" }}>
-              <img src={s1}></img>
-              <img src={s2}></img>
-              <img src={s3}></img>
-              <img src={s4}></img>
-              <img src={s5}></img>
+              <img loading="lazy" src={s1}></img>
+              <img loading="lazy" src={s2}></img>
+              <img loading="lazy" src={s3}></img>
+              <img loading="lazy" src={s4}></img>
+              <img loading="lazy" src={s5}></img>
 
             </div>
           </div> */}
@@ -59,7 +59,7 @@ const Footer = () => {
       <div style={{ background: "black", color: "white", padding: "4rem 1rem",fontSize:"small" }}>
         <div style={{ display: "grid", justifyContent: "space-between" , alignItems: "flex-end", gap:"1rem"}}>
           <div style={{ display: "grid", gap: "1rem"}}>
-            <img src={foot}></img>
+            <img loading="lazy" src={foot}></img>
             <div style={{ height: "1rem" }}></div>
             <span>
               Address:<br></br>22503 Katy Freeway, Suite 511, Katy TX 77450
@@ -76,11 +76,11 @@ const Footer = () => {
           {/* <div style={{ display: "grid", gap: "1rem", height: "fit-content" }}>
             <span>Follow Us </span>
             <div style={{ display: "flex" , gap:"0.5rem" }}>
-              <img src={s1}></img>
-              <img src={s2}></img>
-              <img src={s3}></img>
-              <img src={s4}></img>
-              <img src={s5}></img>
+              <img loading="lazy" src={s1}></img>
+              <img loading="lazy" src={s2}></img>
+              <img loading="lazy" src={s3}></img>
+              <img loading="lazy" src={s4}></img>
+              <img loading="lazy" src={s5}></img>
 
             </div>
           </div> */}

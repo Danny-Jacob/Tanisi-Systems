@@ -60,8 +60,8 @@
 //       {isOverlayVisible && (
 //         <div className="fullscreen-overlay">
 //           <div className="over-flex">
-//             <img src={logo} className="nav-logo"></img>
-//             <img src={back} onClick={toggleOverlay}></img>
+//             <img loading="lazy" src={logo} className="nav-logo"></img>
+//             <img loading="lazy" src={back} onClick={toggleOverlay}></img>
 //           </div>
 //           <div className="nav-items">
 //             {/* <Link to='/' className="nav-item-cs">HOME</Link>
@@ -80,10 +80,10 @@
 //         transition: "background-color 0.3s ease, box-shadow 0.3s ease",
 //       }}> */}
 //        <div className="navbar">
-//         <img src={logo}className="nav-logo"></img>
+//         <img loading="lazy" src={logo}className="nav-logo"></img>
 //         <div className="nav-right-buttons">
 //           <button className="explore-button">Explore</button>
-//           <img src={hamburger} onClick={toggleOverlay} className="ham"></img>
+//           <img loading="lazy" src={hamburger} onClick={toggleOverlay} className="ham"></img>
 //         </div>
 //       </div>
 //     </>
@@ -94,7 +94,7 @@
 import React, { useState } from "react";
 import logo from "../assets/images/Layer_1.svg";
 import back from "../assets/images/back.svg";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import hamburger from "../assets/images/hamburger.svg";
 import "../assets/styles/navbar.css";
 
@@ -111,7 +111,7 @@ const Navbar = () => {
     setShowCareersMenu(false);
     setActiveMenu("");
     setIsOverlayVisible(false);
-    navigate('/');
+    navigate("/");
   };
 
   const handleClick_2 = () => {
@@ -131,31 +131,31 @@ const Navbar = () => {
     setShowCareersMenu(false);
     setActiveMenu("");
     setIsOverlayVisible(false);
-    navigate('/contact');
+    navigate("/contact");
   };
 
   // Functions for the additional menu items under "Solutions"
   const handleClick_Staffing = () => {
     setIsOverlayVisible(false);
     setActiveMenu("");
-    navigate('/solutions');
+    navigate("/solutions");
   };
 
   const handleClick_Development = () => {
     setIsOverlayVisible(false);
     setActiveMenu("");
-    navigate('/development');
+    navigate("/development");
   };
 
   const handleClick_Services = () => {
     setIsOverlayVisible(false);
     setActiveMenu("");
-    navigate('/services');
+    navigate("/services");
   };
   const handleClick_Products = () => {
     setIsOverlayVisible(false);
     setActiveMenu("");
-    navigate('/products');
+    navigate("/products");
   };
 
   // const handleClick_Scope = () => {
@@ -168,19 +168,19 @@ const Navbar = () => {
   const handleClick_ApplyOnline = () => {
     setIsOverlayVisible(false);
     setActiveMenu("");
-    navigate('/apply-online');
+    navigate("/apply-online");
   };
 
   const handleClick_SearchJobs = () => {
     setIsOverlayVisible(false);
     setActiveMenu("");
-    navigate('/careers');
+    navigate("/careers");
   };
 
   const handleClick_ReferralPolicy = () => {
     setIsOverlayVisible(false);
     setActiveMenu("");
-    navigate('/referral-program');
+    navigate("/referral-program");
   };
 
   const toggleOverlay = () => {
@@ -195,52 +195,105 @@ const Navbar = () => {
       {isOverlayVisible && (
         <div className="fullscreen-overlay">
           <div className="over-flex">
-            <img src={logo} className="nav-logo" alt="Logo" />
-            <img src={back} onClick={toggleOverlay} alt="Back" />
+            <img loading="lazy" src={logo} className="nav-logo" alt="Logo" />
+            <img loading="lazy" src={back} onClick={toggleOverlay} alt="Back" />
           </div>
           <div className="nav-items">
-            <div className="nav-item-cs" onClick={handleClick_1}>Home</div>
+            <div className="nav-item-cs" onClick={handleClick_1}>
+              Home
+            </div>
             <div
-              className={`nav-item-cs ${activeMenu === "solutions" ? "active" : ""}`}
+              className={`nav-item-cs ${
+                activeMenu === "solutions" ? "active" : ""
+              }`}
               onClick={handleClick_2}
-              style={{ textDecoration: activeMenu === "solutions" ? "underline" : "none", color: activeMenu === "solutions" ? "#c32f49" : "inherit" }}
+              style={{
+                textDecoration:
+                  activeMenu === "solutions" ? "underline" : "none",
+                color: activeMenu === "solutions" ? "#c32f49" : "inherit",
+              }}
             >
               Solutions
             </div>
             {showSolutionsMenu && (
               <div className="solutions-sub-menu">
-                <div className="nav-subitem-cs" onClick={handleClick_Development}>Development</div>
-                <div className="nav-subitem-cs" onClick={handleClick_Products}>Products</div>
-                <div className="nav-subitem-cs" onClick={handleClick_Services}>Services</div>
-                <div className="nav-subitem-cs" onClick={handleClick_Staffing}>Staffing Area</div>
+                <div
+                  className="nav-subitem-cs"
+                  onClick={handleClick_Development}
+                >
+                  Development
+                </div>
+                <div className="nav-subitem-cs" onClick={handleClick_Products}>
+                  Products
+                </div>
+                <div className="nav-subitem-cs" onClick={handleClick_Services}>
+                  Services
+                </div>
+                <div className="nav-subitem-cs" onClick={handleClick_Staffing}>
+                  Staffing Area
+                </div>
 
                 {/* <div className="nav-subitem-cs" onClick={handleClick_Scope}>Scope</div> */}
               </div>
             )}
             <div
-              className={`nav-item-cs ${activeMenu === "careers" ? "active" : ""}`}
+              className={`nav-item-cs ${
+                activeMenu === "careers" ? "active" : ""
+              }`}
               onClick={handleClick_3}
-              style={{ textDecoration: activeMenu === "careers" ? "underline" : "none", color: activeMenu === "careers" ? "#c32f49" : "inherit" }}
+              style={{
+                textDecoration: activeMenu === "careers" ? "underline" : "none",
+                color: activeMenu === "careers" ? "#c32f49" : "inherit",
+              }}
             >
               Careers
             </div>
             {showCareersMenu && (
               <div className="careers-sub-menu">
-                <div className="nav-subitem-cs" onClick={handleClick_ApplyOnline}>Apply Online</div>
-                <div className="nav-subitem-cs" onClick={handleClick_SearchJobs}>Search Jobs</div>
-                <div className="nav-subitem-cs" onClick={handleClick_ReferralPolicy}>Referral Policy</div>
+                <div
+                  className="nav-subitem-cs"
+                  onClick={handleClick_ApplyOnline}
+                >
+                  Apply Online
+                </div>
+                <div
+                  className="nav-subitem-cs"
+                  onClick={handleClick_SearchJobs}
+                >
+                  Search Jobs
+                </div>
+                <div
+                  className="nav-subitem-cs"
+                  onClick={handleClick_ReferralPolicy}
+                >
+                  Referral Policy
+                </div>
               </div>
             )}
-            <div className="nav-item-cs" onClick={handleClick_4}>Contact</div>
+            <div className="nav-item-cs" onClick={handleClick_4}>
+              Contact
+            </div>
           </div>
         </div>
       )}
 
       <div className="navbar">
-        <img src={logo} className="nav-logo" alt="Logo" />
+        <img loading="lazy" src={logo} className="nav-logo" alt="Logo" />
         <div className="nav-right-buttons">
-          <button className="explore-button">Explore</button>
-          <img src={hamburger} onClick={toggleOverlay} className="ham" alt="Menu" />
+          <button
+            className="explore-button"
+            onClick={() => {
+              navigate("/services");
+            }}
+          >
+            Explore
+          </button>
+          <img
+            src={hamburger}
+            onClick={toggleOverlay}
+            className="ham"
+            alt="Menu"
+          />
         </div>
       </div>
     </>

@@ -1,7 +1,9 @@
 import React from "react";
 import imgban from "../../assets/images/bottom-ban.svg";
 import "../../assets/styles/component_4.css"
+import { useNavigate } from "react-router-dom";
 const Component_4 = () => {
+  const navigate=useNavigate();
   return (
     <>
       <div className="c4-w">
@@ -19,6 +21,9 @@ const Component_4 = () => {
               border: "none",
               borderRadius: "10px",
               background: "#2F61C3",
+            }}
+            onClick={() => {
+              navigate("/contact");
             }}
           >
             Get in Touch

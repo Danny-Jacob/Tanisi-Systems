@@ -54,7 +54,7 @@ const Logo = () => {
         />
       </div>
    </div>
-   <img src={img3} className="image_3"></img>
+   <img loading="lazy" src={img3} className="image_3"></img>
 
    </>
   );

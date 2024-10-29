@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "../../assets/styles/landing.css";
 import video from "../../assets/videos/landing.mp4";
 import img3 from "../../assets/images/comp_3.svg";
+import img3m from "../../assets/images/image-group.svg";
+
 import img4 from "../../assets/images/Image01.jpg";
 
 import Component_2 from "./Component_2";
@@ -13,8 +15,10 @@ import Component_4 from "./Component_4";
 import Footer from "./Footer";
 import Navbar from "../Navbar";
 import Solution from "../Solutions/Solution";
+import Component_5 from "./Component_5";
 
 const Landing = () => {
+  const isMobile = window.innerWidth <= 1000;
   // const [navbarStyle, setNavbarStyle] = useState({
   //   backgroundColor: "transparent",
   //   boxShadow: "none",
@@ -62,9 +66,10 @@ const Landing = () => {
         </div>
       </div>
       <Component_2/>
-      <Component_3/>
-      <img src={img3} className="image_3"></img>
-   <img src={img4} className="image_3"></img>
+      {/* <Component_3/> */}
+      <Component_5/>
+      <img loading="lazy" src={img3} className="image_3" ></img>
+   <img loading="lazy" src={isMobile ? img3m : img4} className="image_3" ></img>
       <Logo/>
       {/* <Testimonial/> */}
 

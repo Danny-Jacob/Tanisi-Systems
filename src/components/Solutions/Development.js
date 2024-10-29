@@ -9,7 +9,7 @@ const Development = () => {
     <div>
       <Navbar />
       <div style={{ height: "4rem" }}></div>
-      <img src={ban1} className="image_3"></img>
+      <img loading="lazy" src={ban1} className="image_3"></img>
       <div className="comp_2">
         <div className="comp_2_heading">Development Process</div>
         <div className="comp_2_desc">
@@ -67,8 +67,8 @@ const Development = () => {
         </div>
       </div>
       <div style={{ height: "4rem" }}></div>
-      <img src={img3} style={{ width: "100%" }} className="image_3"></img>
-      <div className="comp_2" style={{ paddingTop: "3rem" }}>
+      <img loading="lazy" src={img3} style={{ width: "100%" }} className="image_3"></img>
+      <div className="comp_2_dev" >
         <div className="comp_2_heading">Java Development</div>
         <div className="comp_2_desc_dev">
           Tanisi Systems has a proven track record in delivering Java-based
@@ -79,7 +79,7 @@ const Development = () => {
           of our clients.
         </div>
       </div>
-      <div className="comp_2" style={{ paddingTop: "3rem" }}>
+      <div className="comp_2_dev" >
         <div className="comp_2_heading">Web and Mobile Development</div>
         <div className="comp_2_desc_dev">
           Our team excels in building responsive and dynamic web applications
@@ -89,7 +89,7 @@ const Development = () => {
           experiences across devices.
         </div>
       </div>
-      <div className="comp_2" style={{ paddingTop: "3rem" }}>
+      <div className="comp_2_dev" >
         <div className="comp_2_heading">Cloud Solutions</div>
         <div className="comp_2_desc_dev">
           We offer comprehensive cloud services that drive digital
@@ -101,7 +101,7 @@ const Development = () => {
           efficiency.
         </div>
       </div>
-      <div className="comp_2" style={{ paddingTop: "3rem" }}>
+      <div className="comp_2_dev" >
         <div className="comp_2_heading">
           Artificial Intelligence and Machine Learning
         </div>
@@ -113,7 +113,7 @@ const Development = () => {
           unlock new business opportunities and optimize operations.
         </div>
       </div>
-      <div className="comp_2" style={{ paddingTop: "3rem" }}>
+      <div className="comp_2_dev" >
         <div className="comp_2_heading">Internet of Things (IoT)</div>
         <div className="comp_2_desc_dev">
           Our IoT solutions enable businesses to connect, monitor, and control
@@ -123,7 +123,7 @@ const Development = () => {
           manufacturing, healthcare, and smart cities.
         </div>
       </div>
-      <div className="comp_2" style={{ paddingTop: "3rem" }}>
+      <div className="comp_2_dev" >
         <div className="comp_2_heading">Blockchain</div>
         <div className="comp_2_desc_dev">
           We provide blockchain consulting and development services for
@@ -133,7 +133,7 @@ const Development = () => {
           supply chain management, finance, and digital identity verification.
         </div>
       </div>
-      <div className="comp_2" style={{ paddingTop: "3rem" }}>
+      <div className="comp_2_dev" >
         <div className="comp_2_heading">SAP Services</div>
         <div className="comp_2_desc_dev">
           Tanisi Systems is a global provider of Enterprise Business solutions,
@@ -143,7 +143,7 @@ const Development = () => {
           efficiency and innovation.
         </div>
       </div>
-      <div className="comp_2" style={{ paddingTop: "3rem" }}>
+      <div className="comp_2_dev" >
         <div className="comp_2_heading">Support Services</div>
         <div className="comp_2_desc_dev">
           We deliver comprehensive product support through dedicated Level 2 and

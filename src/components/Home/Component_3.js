@@ -26,19 +26,19 @@ const Component_3 = () => {
               Smart Solutions
                 <div style={{height:"1rem"}}></div>              
                 <span class="centered-content">
-                  <img src={line} alt="Line Image" />
+                  <img loading="lazy" src={line} alt="Line Image" />
                   IOT Testing Labs
                 </span>
                 <span class="centered-content">
-                  <img src={line} alt="Line Image" />
+                  <img loading="lazy" src={line} alt="Line Image" />
                   Streaming Analytics
                 </span>
                 <span class="centered-content">
-                  <img src={line} alt="Line Image" />
+                  <img loading="lazy" src={line} alt="Line Image" />
                   Wearable Solutions
                 </span>
                 <span class="centered-content">
-                  <img src={line} alt="Line Image" />
+                  <img loading="lazy" src={line} alt="Line Image" />
                   IOT Solutions
                 </span>
                                
@@ -48,19 +48,19 @@ const Component_3 = () => {
               Software Solutions
                 <div style={{height:"1rem"}}></div>              
                 <span class="centered-content">
-                  <img src={line} alt="Line Image" />
+                  <img loading="lazy" src={line} alt="Line Image" />
                   Custom software development
                 </span>
                 <span class="centered-content">
-                  <img src={line} alt="Line Image" />
+                  <img loading="lazy" src={line} alt="Line Image" />
                   Scalable, efficient systems
                 </span>
                 <span class="centered-content">
-                  <img src={line} alt="Line Image" />
+                  <img loading="lazy" src={line} alt="Line Image" />
                   Integration with existing platforms
                 </span>
                 <span class="centered-content">
-                  <img src={line} alt="Line Image" />
+                  <img loading="lazy" src={line} alt="Line Image" />
                   Enhance business productivity
                 </span>
                                
@@ -69,23 +69,23 @@ const Component_3 = () => {
               Workforce Optimization
               <div style={{height:"1rem"}}></div>    
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Innovative technology solutions
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Achieve client excellence
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Assess staffing spend, rates
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Client Excellence.
               </span>   
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Recommend recruiting realignment
               </span>            
             </div>
@@ -94,19 +94,19 @@ const Component_3 = () => {
             MSP
               <div style={{height:"1rem"}}></div>              
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Program management & billing
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Dedicated responsive team
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 On-call for staffing needs
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Technology-driven effectiveness
               </span>
                              
@@ -116,19 +116,19 @@ const Component_3 = () => {
             Service Level Agreement
               <div style={{height:"1rem"}}></div>              
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Fast submittal response time
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 High retention/completion rates
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Optimal placement ratios
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Efficient FTE conversions
               </span>
                             
@@ -154,19 +154,19 @@ const Component_3 = () => {
               Workforce Optimization
               <div style={{height:"1rem"}}></div>    
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Innovative Technologies
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Increased Efficiencies Leading Edge Solutions
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 End-Goal
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Client Excellence.
               </span>              
             </div>
@@ -175,23 +175,23 @@ const Component_3 = () => {
               MSP
               <div style={{height:"1rem"}}></div>              
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 From overall
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Program Management
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Cost Effective
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Staffing Solution.
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Into your Workforce.
               </span>               
             </div>
@@ -200,19 +200,19 @@ const Component_3 = () => {
             Service Level Agreement
               <div style={{height:"1rem"}}></div>              
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Submittal Response Time
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Retention/Project Completion
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Orders Received
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 to Placement Ratios
               </span>
                             
@@ -222,19 +222,19 @@ const Component_3 = () => {
             Smart Solutions
               <div style={{height:"1rem"}}></div>              
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 IOT Testing Labs
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Streaming Analytics
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Wearable Solutions
               </span>
               <span class="centered-content">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 IOT Solutions
               </span>
                              

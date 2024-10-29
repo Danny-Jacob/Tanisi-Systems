@@ -9,7 +9,7 @@ const Services = () => {
   return (
     <div><Navbar/>
     <div style={{height:"4rem"}}></div>
-    <img src={ban1} className="image_3"></img>
+    <img loading="lazy" src={ban1} className="image_3"></img>
     <Component_3/>
     <Footer/></div>
   )

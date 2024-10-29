@@ -20,6 +20,7 @@
   font-family: "Raleway";
   padding: 0.5rem 1rem;
   margin-right: 1rem;
+  cursor: pointer;
 }
 .fullscreen-overlay {
     /* padding: 2rem 6rem; */

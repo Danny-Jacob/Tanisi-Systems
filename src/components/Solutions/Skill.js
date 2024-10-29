@@ -17,32 +17,32 @@ const Skill = () => {
         <div className="right-items">
               <div style={{height:"1rem"}}></div>    
               <span class="centered-content1">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 .NET 6/7, Blazor
               </span>
               <span class="centered-content1">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 SharePoint Online, Notion
               </span>
               <span class="centered-content1">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Zero Trust, Cloud Security
               </span>
               <span class="centered-content1">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 React Native, Flutter, React, Angular
               </span>
               <span class="centered-content1">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Microservices, Kubernetes
               </span><span class="centered-content1">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Spring Boot, Micronaut
               </span><span class="centered-content1">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 Serverless, GraphQL
               </span><span class="centered-content1">
-                <img src={line} alt="Line Image" />
+                <img loading="lazy" src={line} alt="Line Image" />
                 TensorFlow, Spark
               </span>              
             </div>

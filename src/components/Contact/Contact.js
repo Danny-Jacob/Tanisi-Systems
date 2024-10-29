@@ -52,8 +52,8 @@ const Contact = () => {
       <Navbar />
       <div style={{height:"4rem"}}></div>
 
-      <img src={main} style={{ width: "100%" }}className="image_3"></img>
-      <img src={img3} style={{ width: "100%" }}className="image_3"></img>
+      <img loading="lazy" src={main} style={{ width: "100%" }}className="image_3"></img>
+      <img loading="lazy" src={img3} style={{ width: "100%" }}className="image_3"></img>
       <div style={{ background: "black", color: "white" }} className="apply">
         <div className="apply-main">
           <span className="apply-head">Contact Us</span>

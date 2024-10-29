@@ -227,7 +227,7 @@ const JobDescription = () => {
           </form>
         </div>
       </div>
-      <img src={img3} style={{ width: "100%" }}></img>
+      <img loading="lazy" src={img3} style={{ width: "100%" }}></img>
       <Footer />
     </div>
   );

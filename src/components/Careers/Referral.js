@@ -8,7 +8,7 @@ const Referral = () => {
     <div><Navbar/>
     <div style={{height:"4rem"}}></div>
     <div className="image-container">
-      <img src={img4} alt="Your Image" className="background-image" />
+      <img loading="lazy" src={img4} alt="Your Image" className="background-image" />
       <div className="centered-text">
         <p>Referral Policy</p>
       </div>
@@ -27,7 +27,7 @@ const Referral = () => {
           for the referral.
         </div>
       </div>
-      <div style={{height:"8rem"}}></div>
+      {/* <div style={{height:"8rem"}}></div> */}
 
     <Footer/></div>
   )

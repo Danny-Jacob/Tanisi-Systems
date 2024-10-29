@@ -27,10 +27,10 @@ const Sol_slider = () => {
 
   return (
     <>
-      <img src={img3} className="image_3"></img>
-      {/* <img src={img4} className="image_3"></img> */}
+      <img loading="lazy" src={img3} className="image_3"></img>
+      {/* <img loading="lazy" src={img4} className="image_3"></img> */}
       <div className="image-container">
-      <img src={img4} alt="Your Image" className="background-image" />
+      <img loading="lazy" src={img4} alt="Your Image" className="background-image" />
       <div className="centered-text">
         <p>Staffing Approach and Scope</p>
       </div>

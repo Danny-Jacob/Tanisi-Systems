@@ -14,7 +14,7 @@ const Solution = () => {
     <div>
       <Navbar/>
       <div style={{height:"4rem"}}></div>
-      <img src={ban1} className="image_3"></img>
+      <img loading="lazy" src={ban1} className="image_3"></img>
       <>
         <div className="comp_2">
           <div className="comp_2_heading">Staffing Areas</div>
@@ -29,14 +29,14 @@ const Solution = () => {
             are able to deliver on those needs.
           </div>
         </div>
-        <div style={{height:"8rem"}}></div>
+        {/* <div style={{height:"2rem"}}></div> */}
         
       </>
       
       <Sol_slider/>
       <div style={{height:"8rem"}}></div>
-      <img src={img3} className="image_3"></img>
-        <img src={ban2} className="image_3"></img>
+      <img loading="lazy" src={img3} className="image_3"></img>
+        <img loading="lazy" src={ban2} className="image_3"></img>
       <Grid/>
       <Skill/>
       <Footer/>

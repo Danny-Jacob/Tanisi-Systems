@@ -16,8 +16,8 @@ const Component_2 = () => {
         Process Outsourcing services.
       </div>
     </div>
-    {/* <img src={img2}className="image_3"></img>
-    <img src={img3} className="image_3"></img> */}
+    {/* <img loading="lazy" src={img2}className="image_3"></img>
+    <img loading="lazy" src={img3} className="image_3"></img> */}
 
     </>
   );

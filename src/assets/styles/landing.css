@@ -6,6 +6,7 @@
   background-image: url('../images//Group\ 264.svg'); /* Replace with the path to your image */
   background-size: cover; /* This will ensure the image covers the entire element */
   background-position: center;
+  overflow: hidden;
 }
 
 .video-background video {
@@ -77,6 +78,96 @@
   /* padding: 5rem; */
   /* text-align: center; */
 }
+.unlock_heading{
+  color:#c32f49 ;
+  font-size: 44px;
+  font-family: "Raleway";
+  width: 80%;
+}
+.unlock_body{
+  font-size: x-large;
+  font-family: "Raleway";
+  text-align: justify;
+}
+.force_pro{
+  font-family: "Raleway";
+  font-weight: bold;
+  margin-bottom: 1rem;
+
+}
+.force_head{
+  font-family: "Raleway";
+  font-size: 44px;
+  color:#c32f49 ;
+width: 50%;
+margin-bottom: 1rem;
+
+
+
+}
+.force_des{
+  font-size: x-large;
+  font-family: "Raleway";
+  text-align: justify;
+  margin-bottom: 4rem;
+
+}
+.grid_container {
+  font-family: "Raleway";
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates two equal-width columns */
+  grid-template-rows: repeat(2, 1fr);    /* Creates two equal-height rows */
+  gap: 1rem; /* Optional: adds space between the grid items */
+  width: 100%;  /* Optional: full width of the container */
+   /* Set a height for the container */
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  /* width: min-content; */
+  height: min-content;
+}
+.item_header{
+  color:#c32f49 ;
+  margin-top: 1.5rem;
+  font-size: x-large;
+  width: 90%;
+  font-family: "Raleway";
+
+
+}
+.item_body{
+  margin-top: 0.5rem;
+  font-family: "Raleway";
+  text-align: justify;
+  width: 90%;
+
+  font-size: large;
+
+}
+.g_c_img{
+  width: 90%;
+
+}
+.comp_5{
+  display: flex;
+   padding:4rem 10rem;
+}
+.comp_5_flex1{
+  width: 50%;
+}
+.comp_5_flex2{
+  width: 50%;
+}
+.comp_5_flex1_image{
+  width: 80%;
+}
+.comp_52{
+  padding:4rem 10rem;
+}
 @media screen and (max-width:800px) {
   .video-content p {
     color: black;
@@ -93,5 +184,97 @@
     color:#2F61C3;
     font-Size:x-large;
     font-family: "Raleway";
+  }
+  .comp_5{
+    display: grid;
+     padding:0 2rem 2rem 2rem;
+  }
+  .comp_52{
+    /* display: grid; */
+     padding:2rem;
+  }
+  .comp_5_flex1{
+    width: auto;
+    margin: 0 auto;
+  }
+  .comp_5_flex2{
+    width: auto;
+  }
+  .comp_5_flex1_image{
+width: 100%;
+  }
+  .unlock_heading{
+    margin-top: 2rem;
+    color:#c32f49 ;
+    font-size: 24px;
+    font-family: "Raleway";
+    width: 100%;
+  }
+  .unlock_body{
+    font-size: medium;
+    font-family: "Raleway";
+    text-align: justify;
+  }
+  .force_pro{
+    font-family: "Raleway";
+    font-weight: bold;
+    margin-bottom: 1rem;
+  
+  }
+  .force_head{
+    font-family: "Raleway";
+    font-size: 24px;
+    color:#c32f49 ;
+  width: 100%;
+  margin-bottom: 1rem;
+  
+  
+  
+  }
+  .force_des{
+    font-size: medium;
+    font-family: "Raleway";
+    text-align: justify;
+    margin-bottom: 4rem;
+  
+  }
+  .grid_container {
+    font-family: "Raleway";
+  
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Creates two equal-width columns */
+    grid-template-rows: repeat(1, 1fr);    /* Creates two equal-height rows */
+    gap: 1rem; /* Optional: adds space between the grid items */
+    width: 100%;  /* Optional: full width of the container */
+     /* Set a height for the container */
+  }
+  .item_header{
+    color:#c32f49 ;
+    margin-top: 1.5rem;
+    font-size: 24px;
+    width: 100%;
+  
+  }
+  .item_body{
+    margin-top: 0.5rem;
+    font-family: "Raleway";
+    text-align: justify;
+    width: 100%;
+  
+    font-size: medium;
+  
+  }
+  .g_c_img{
+    width: 100%;    margin-top: 0.5rem;
+
+  
+  }
+  .video-content {
+    position: absolute;
+    top: 30%;
+    left: 2rem;
+    /* transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; */
   }
 }

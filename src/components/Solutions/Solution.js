@@ -34,7 +34,7 @@ const Solution = () => {
       </>
       
       <Sol_slider/>
-      <div style={{height:"8rem"}}></div>
+      <div style={{height:"4rem"}}></div>
       <img loading="lazy" src={img3} className="image_3"></img>
         <img loading="lazy" src={ban2} className="image_3"></img>
       <Grid/>

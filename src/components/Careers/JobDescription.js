@@ -19,7 +19,7 @@ const JobDescription = () => {
     const fetchJob = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/jobs?jobId=${jobId}`
+          `https://tanisiinc.com/api/jobs?jobId=${jobId}`
         );
         setJobs(response.data.data);
         console.log(jobs);
@@ -62,7 +62,7 @@ const JobDescription = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/applyJob", {
+      const response = await fetch("https://tanisiinc.com/api/applyJob", {
         method: "POST",
         body: data,
       });

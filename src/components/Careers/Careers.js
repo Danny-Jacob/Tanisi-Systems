@@ -41,7 +41,7 @@ const Careers = () => {
   //   }
 
   //   try {
-  //     const response = await fetch("http://localhost:5000/applyJob", {
+  //     const response = await fetch("https://tanisiinc.com/api/applyJob", {
   //       method: "POST",
   //       body: data,
   //     });
@@ -65,7 +65,7 @@ const Careers = () => {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/jobs");
+        const response = await axios.get("https://tanisiinc.com/api/jobs");
         setJobs(response.data.data);
       } catch (err) {
         setError(err.message);

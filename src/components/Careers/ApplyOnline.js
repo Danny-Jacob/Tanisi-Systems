@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import Navbar from '../Navbar'
+import React, { useState } from "react";
+import Navbar from "../Navbar";
 import ban1 from "../../assets/images/Apply Online.jpg";
 import img3 from "../../assets/images/comp_3.svg";
-import Footer from '../Home/Footer';
+import Footer from "../Home/Footer";
 import "../../assets/styles/career.css";
 
 const ApplyOnline = () => {
@@ -11,7 +11,6 @@ const ApplyOnline = () => {
   const [formData, setFormData] = useState({
     fullname: "",
     email: "",
-    
     experience: "",
     state: "",
     country: "",
@@ -21,37 +20,37 @@ const ApplyOnline = () => {
     resume: null,
   });
   // old
-  // const handleChange = (e) => {
-  //   const { name, value, type, files } = e.target;
-  //   setFormData({
-  //     ...formData,
-  //     [name]: type === "file" ? files[0] : value,
-  //   });
-  // };
   const handleChange = (e) => {
-    const { name, type, files } = e.target;
-  
-    if (type === "file") {
-      const file = files[0];
-      
-      if (file && file.size < 3 * 1024 * 1024) { // 3 MB in bytes
-        setError("File must be at least 3 MB.");
-        return; // Stop further processing
-      } else {
-        setError(""); // Clear error if valid
-      }
-  
-      setFormData({
-        ...formData,
-        [name]: file,
-      });
-    } else {
-      setFormData({
-        ...formData,
-        [name]: e.target.value,
-      });
-    }
+    const { name, value, type, files } = e.target;
+    setFormData({
+      ...formData,
+      [name]: type === "file" ? files[0] : value,
+    });
   };
+  // const handleChange = (e) => {
+  //   const { name, type, files } = e.target;
+
+  //   if (type === "file") {
+  //     const file = files[0];
+
+  //     if (file && file.size < 3 * 1024 * 1024) { // 3 MB in bytes
+  //       setError("File must be at least 3 MB.");
+  //       return; // Stop further processing
+  //     } else {
+  //       setError(""); // Clear error if valid
+  //     }
+
+  //     setFormData({
+  //       ...formData,
+  //       [name]: file,
+  //     });
+  //   } else {
+  //     setFormData({
+  //       ...formData,
+  //       [name]: e.target.value,
+  //     });
+  //   }
+  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -62,7 +61,7 @@ const ApplyOnline = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/applyJob", {
+      const response = await fetch("https://tanisiinc.com/api/applyJob", {
         method: "POST",
         body: data,
       });
@@ -79,10 +78,16 @@ const ApplyOnline = () => {
     }
   };
   return (
-    <div><Navbar/>
-    <div style={{height:"4rem"}}></div>
-    <img loading="lazy" src={ban1} className="image_3"></img>
-    <img loading="lazy" src={img3} style={{ width: "100%" }} className="image_3"></img>
+    <div>
+      <Navbar />
+      <div style={{ height: "4rem" }}></div>
+      <img loading="lazy" src={ban1} className="image_3"></img>
+      <img
+        loading="lazy"
+        src={img3}
+        style={{ width: "100%" }}
+        className="image_3"
+      ></img>
       <div style={{ background: "black", color: "white" }} className="apply">
         <div className="apply-main">
           <span className="apply-head">Apply Online</span>
@@ -119,7 +124,7 @@ const ApplyOnline = () => {
               </label>
             </div>
             <div className="apply-form-field">
-            <label>
+              <label>
                 Job Role
                 <input
                   type="text"
@@ -167,9 +172,12 @@ const ApplyOnline = () => {
                 />
               </label>
             </div>
-            <div className="apply-form-field" style={{width:"50%"}}>
+            <div className="apply-form-field" style={{ width: "50%" }}>
               <label>
-                Phone number <span style={{fontSize:"x-small"}}>(include country code)</span>
+                Phone number{" "}
+                <span style={{ fontSize: "x-small" }}>
+                  (include country code)
+                </span>
                 <input
                   type="number"
                   name="mobile"
@@ -189,17 +197,21 @@ const ApplyOnline = () => {
               </label> */}
             </div>
             <div className="apply-form-field">
-            <label>
-  Upload file<span style={{fontSize:"x-small"}}> &nbsp;(maximum file size: 3mb)</span>
-  <input
-    type="file"
-    name="resume"
-    accept="application/pdf"
-    onChange={handleChange}
-    className="custom-choose"
-  />
-</label>
-{error && <span className="error-message">{error}</span>}
+              <label>
+                Upload file
+                <span style={{ fontSize: "x-small" }}>
+                  {" "}
+                  &nbsp;(maximum file size: 3mb)
+                </span>
+                <input
+                  type="file"
+                  name="resume"
+                  accept="application/pdf"
+                  onChange={handleChange}
+                  className="custom-choose"
+                />
+              </label>
+              {error && <span className="error-message">{error}</span>}
               <button type="submit" className="submit-form-button">
                 Submit
               </button>
@@ -207,10 +219,16 @@ const ApplyOnline = () => {
           </form>
         </div>
       </div>
-      <img loading="lazy" src={img3} style={{ width: "100%" }} className="image_3"></img>
+      <img
+        loading="lazy"
+        src={img3}
+        style={{ width: "100%" }}
+        className="image_3"
+      ></img>
 
-    <Footer/></div>
-  )
-}
+      <Footer />
+    </div>
+  );
+};
 
-export default ApplyOnline
+export default ApplyOnline;

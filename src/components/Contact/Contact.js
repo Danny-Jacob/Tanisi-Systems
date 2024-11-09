@@ -26,7 +26,7 @@ const Contact = () => {
   // Function to handle form submission
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const url = 'http://localhost:5000/addMessage';
+    const url = 'https://tanisiinc.com/api/addMessage';
 
     try {
       const response = await fetch(url, {
